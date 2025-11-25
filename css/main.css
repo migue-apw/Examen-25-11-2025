@@ -1,0 +1,136 @@
+:root {
+    --blue100: hsl(225, 100%, 94%);
+    --blue700: hsl(245, 75%, 52%);
+
+    --blue50: hsl(225, 100%, 98%);
+    --blue600: hsl(224, 23%, 55%);
+    --blue950: hsl(223, 47%, 23%);
+
+    --fontSize: 16px;
+    --fontFamily: system-ui;
+    --weightNormal: 500;
+    --weightBold: 700;
+    --weightTitleBold: 900;
+}
+
+* {
+    margin:0;
+    padding:0;
+
+    font-family: var(--fontFamily);
+    font-weight: var(--weightNormal);
+}
+
+b {
+    font-weight: var(--weightBold);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--blue100);
+    color: var(--blue600);
+}
+
+.background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+}
+
+.summaryCard {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 25rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: rgba(128, 128, 128, 0.534) 0px 0px 20px 5px;
+}
+
+.cardContent {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    text-align: center;
+}
+
+.cardContent h2, .plan b {
+    color: black;
+}
+
+.cardContent * {
+    margin: 10px 0;
+}
+
+.hero {
+    margin-top: 0;
+    width: -webkit-fill-available;
+    height: 37%;
+    object-fit: cover;
+}
+
+.currentPlan {
+    display: flex;
+    background-color: var(--blue50);
+    padding: 5px 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.currentPlan img {
+    object-fit: contain;
+}
+
+.plan {
+    width: -webkit-fill-available;
+    text-align: left;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.currentPlan a {
+    display: flex;
+    align-items: center;
+}
+
+.plan * {
+    margin: 0;
+}
+
+.btn {
+    width: 107%;
+    padding: 5px 20px;
+}
+
+.payment {
+    color: white;
+    padding: 15px 0;
+    background-color: var(--blue700);
+    border-radius: 10px;
+    box-shadow: rgba(128, 128, 128, 0.534) 0px 0px 20px 5px;
+}
+.cancel {
+    
+}
+
+.attribution {
+    margin-top: 20px;
+}
+
+.title {
+    font-weight: var(--weightTitleBold);
+}
